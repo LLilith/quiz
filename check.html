@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./css/main.css" media="screen" title="no title" charset="utf-8">
+        <script src="./js/jquery-2.2.3.min.js" charset="utf-8"></script>
+        <script type="text/javascript">
+              var classes = ['班级','1101A','1102A','0901A','0902A','0903A'];
+              var teacher = ['老师','魏老师','陈老师','李老师'];
+
+              $(document).ready(function () {
+
+                  //添加班级下拉框选项
+                  for (var i = 0; i < classes.length; i++) {
+
+                      //添加 option
+                      var opt = $('<option></option>').text(classes[i]);
+                      //设置 opt 的 value
+                      opt.val(classes[i]);
+                      //追加到 select
+                      $('#classes').append(opt);
+                  }
+
+                  //添加老师下拉框选项
+                  for (var i = 0; i < teacher.length; i++) {
+
+                      //添加 option
+                      var opt = $('<option></option>').text(teacher[i]);
+                      //设置 opt 的 value
+                      opt.val(teacher[i]);
+                      //追加到 select
+                      $('#teacher').append(opt);
+                  }
+
+              });
+
+        </script>
+        <style media="screen">
+
+            select.readonly{meizz:expression(selectedIndex=0)}
+        </style>
+        <title>牛耳教育</title>
+    </head>
+    <body>
+        <div id="bb">
+            <header>
+                <div id="title">
+                    <h1><font size="+6">每周教员考评</font></h1>
+                </div>
+            </header>
+
+            <nav>
+                <div class="">
+                    <select name="classes" id="classes"></select>
+                    <select name="teacher" id="teacher"></select>
+                    <hr>
+                </div>
+                <div class="q">
+                    <label for="">1.是否按时上课，不迟到。</label><br>
+
+                    <input type="radio" name="1" value="">3
+                    <input type="radio" name="1" value="">2
+                    <input type="radio" name="1" value="">1
+                </div>
+                <div class="q">
+                    <label for="">2.是否按时上课，不迟到。是否按时上课，不迟到。</label><br>
+
+                    <input type="radio" name="1" value="">3
+                    <input type="radio" name="1" value="">2
+                    <input type="radio" name="1" value="">1
+                </div>
+                <div class="q">
+                    <label for="">3.是否按时上课，不迟到。是否按时上课，不迟到。是否按时上课，不迟到。</label><br>
+
+                    <input type="radio" name="1" value="">3
+                    <input type="radio" name="1" value="">2
+                    <input type="radio" name="1" value="">1
+                </div>
+                <div class="q">
+                    <label for="">4.是否按时上课，不迟到。是否按时上课，不迟到。</label><br>
+
+                    <input type="radio" name="1" value="">3
+                    <input type="radio" name="1" value="">2
+                    <input type="radio" name="1" value="">1
+                </div>
+                <div class="q">
+                    <label for="">5.是否按时上课，不迟到。是否按时上课，不迟到。</label><br>
+
+                    <input type="radio" name="1" value="">3
+                    <input type="radio" name="1" value="">2
+                    <input type="radio" name="1" value="">1
+                </div>
+                <div class="q">
+                    <label for="">6.是否按时上课，不迟到。是否按时上课，不迟到。是否按时上课，不迟到。</label><br>
+
+                    <input type="radio" name="1" value="">3
+                    <input type="radio" name="1" value="">2
+                    <input type="radio" name="1" value="">1
+                </div>
+                <div class="q">
+                    <label for="">7.是否按时上课，不迟到。</label><br>
+
+                    <input type="radio" name="1" value="">3
+                    <input type="radio" name="1" value="">2
+                    <input type="radio" name="1" value="">1
+                </div>
+                <div class="q">
+                    <label for="">8.是否按时上课，不迟到。</label><br>
+
+                    <input type="radio" name="1" value="">3
+                    <input type="radio" name="1" value="">2
+                    <input type="radio" name="1" value="">1
+                </div>
+                <div class="q">
+                    <label for="">9.是否按时上课，不迟到。</label><br>
+
+                    <input type="radio" name="1" value="">3
+                    <input type="radio" name="1" value="">2
+                    <input type="radio" name="1" value="">1
+                </div>
+            </nav>
+
+            <footer>
+                Copyright (c) 2016 Copyright Holder All Rights Reserved.
+            </footer>
+        </div>
+
+    </body>
+</html>
